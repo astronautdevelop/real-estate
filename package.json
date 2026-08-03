@@ -1,0 +1,80 @@
+{
+  "name": "real-estate",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Confronto Immobili - Applicazione web/desktop offline",
+  "author": "Astronaut",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"npm run dev\" \"cross-env NODE_ENV=development electron .\"",
+    "electron:build": "npm run build && electron-builder",
+    "dist": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.4.0",
+    "dexie": "^4.4.4",
+    "framer-motion": "^12.42.2",
+    "i18next": "^26.3.6",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "lucide-react": "^1.27.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-dropzone": "^19.1.1",
+    "react-i18next": "^17.0.11",
+    "react-router-dom": "^7.11.0",
+    "recharts": "^3.10.1",
+    "sonner": "^2.0.7",
+    "tailwindcss": "^4.3.3",
+    "uuid": "^14.0.1",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "concurrently": "^10.0.4",
+    "cross-env": "^10.1.0",
+    "electron": "^43.2.0",
+    "electron-builder": "^26.15.3",
+    "oxlint": "^1.71.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "wait-on": "^8.0.3"
+    },
+    "build": {
+      "appId": "com.realestate.app",
+      "productName": "Real Estate",
+      "directories": {
+        "output": "release"
+      },
+      "files": [
+        "dist/**/*",
+        "electron/**/*"
+      ],
+      "win": {
+        "target": [
+          "nsis",
+          "portable"
+      ],
+      "icon": "electron/icon.ico"
+      },
+      "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true,
+        "createDesktopShortcut": true,
+        "createStartMenuShortcut": true
+      }
+    }
+}
+
