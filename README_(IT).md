@@ -14,7 +14,7 @@ Applicazione desktop offline per la gestione e il confronto di immobili.
 
 ## 🚀 Download per l'utente finale
 
-Scarica l'ultima versione dalla [pagina delle release](https://github.com/tuo-username/Real-Estate/releases).
+Scarica l'ultima versione dalla [pagina delle release](https://github.com/astronautdevelop/Real-Estate/releases).
 
 - **Installer**: `Real Estate Setup.exe` (da eseguire per installare l'app)
 - **Portabile**: `Real Estate.exe` (funziona senza installazione, basta doppio clic)
@@ -122,7 +122,7 @@ MIT © Astronaut
 
 ## 👤 Autore
 
-**Astronaut** – [GitHub](https://github.com/tuo-username)
+**Astronaut** – [GitHub](https://github.com/astronautdevelop)
 
 ---
 
@@ -140,4 +140,32 @@ I contributi sono benvenuti! Per favore:
 
 ## ❓ Domande o problemi?
 
-Apri una [Issue](https://github.com/tuo-username/Real-Estate/issues) su GitHub.
+Apri una [Issue](https://github.com/astronautdevelop/Real-Estate/issues) su GitHub.
+
+---
+
+## 🔄 Guida rapida (per sviluppatori)
+
+Clone
+git clone https://github.com/tuo-username/Real-Estate.git
+cd Real-Estate
+
+Installa le dipendenze
+npm install
+
+Esegui in modalità di sviluppo
+npm run electron:dev
+
+Build per la produzione
+npm run dist
+
+---
+
+## 🖥️ Guida rapida per l'utente
+
+1. Scarica Real Estate.exe dalla sezione "Releases"
+2. Salvalo in una posizione qualsiasi del computer (es. C:\Apps\Real Estate\)
+3. Fai doppio clic per avviarlo
+4. Non è richiesta alcuna installazione!
+
+5. (Se l'applicazione non si avvia, assicurati di avere installato la versione più recente di Visual C++ Redistributable).
