@@ -146,17 +146,17 @@ Apri una [Issue](https://github.com/astronautdevelop/Real-Estate/issues) su GitH
 
 ## 🔄 Guida rapida (per sviluppatori)
 
-Clone
+# Clone
 git clone https://github.com/astronautdevelop/Real-Estate.git
 cd Real-Estate
 
-Installa le dipendenze
+# Installa le dipendenze
 npm install
 
-Esegui in modalità di sviluppo
+# Esegui in modalità di sviluppo
 npm run electron:dev
 
-Build per la produzione
+# Build per la produzione
 npm run dist
 
 ---
