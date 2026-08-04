@@ -64,23 +64,23 @@ The files will be in the release/ folder.
 
 ```
 Real-Estate/
-├── src/                    # Codice React (TypeScript)
-│   ├── components/         # Componenti UI
-│   ├── pages/              # Pagine (Home, Confronti, Cronologia, Impostazioni)
+├── src/                    # React code (TypeScript)
+│   ├── components/         # UI Components
+│   ├── pages/              # Pages Pages (Home, Compare, History, Settings)
 │   ├── store/              # Zustand store
-│   ├── utils/              # Utility (confronto, profiler, formattazione)
+│   ├── utils/              # Utilities (comparison, profiler, formatters)
 │   ├── types/              # TypeScript types
-│   └── i18n/               # Traduzioni (IT + EN)
+│   └── i18n/               # Translations (IT + EN)
 ├── electron/               # Electron (desktop)
-│   ├── main.cjs           # Processo principale
+│   ├── main.cjs           # Main process
 │   ├── preload.cjs        # Preload script
-│   └── icon.ico           # Icona personalizzata
-├── public/                # File statici
-├── package.json           # Dipendenze e script
-├── vite.config.ts         # Configurazione Vite
-├── tsconfig.json          # Configurazione TypeScript
+│   └── icon.ico           # Custom icon
+├── public/                # Static files
+├── package.json           # Dependencies and scripts
+├── vite.config.ts         # Vite configuration
+├── tsconfig.json          # TypeScript configuration
 └── README_(IT).md        
-└── README_(EN).md              # This guide
+└── README_(EN).md          # This guide
 ```
 
 ---
@@ -131,8 +131,6 @@ MIT © Astronaut
 
 Contributions are welcome! Please:
 
-
-
 1. Fork the repository
 2. Create a branch for your feature (git checkout -b feature/new-feature)
 3. Commit your changes (git commit -m "feat: add new feature")
@@ -144,3 +142,31 @@ Contributions are welcome! Please:
 ## ❓ Questions or issues?
 
 Open an [Issue](https://github.com/astronautdevelop/Real-Estate/issues) su GitHub.
+
+---
+
+## 🔄 Quick Start (for developers)
+
+# Clone
+git clone https://github.com/tuo-username/Real-Estate.git
+cd Real-Estate
+
+# Install dependencies
+npm install
+
+# Run in development mode
+npm run electron:dev
+
+# Build for production
+npm run dist
+
+---
+
+## 🖥️ End User Quick Start
+
+1. Download Real Estate.exe from Releases
+2. Save it anywhere on your computer (e.g., C:\Apps\Real Estate\)
+3. Double-click to run
+4. No installation required!
+
+(If the application doesn't start, make sure you have the latest Visual C++ Redistributable installed).
