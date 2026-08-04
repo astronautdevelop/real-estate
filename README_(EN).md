@@ -148,7 +148,7 @@ Open an [Issue](https://github.com/astronautdevelop/Real-Estate/issues) su GitHu
 ## 🔄 Quick Start (for developers)
 
 # Clone
-git clone https://github.com/your-username/Real-Estate.git
+git clone https://github.com/astronautdevelop/Real-Estate.git
 cd Real-Estate
 
 # Install dependencies
