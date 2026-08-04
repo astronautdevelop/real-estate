@@ -147,7 +147,7 @@ Apri una [Issue](https://github.com/astronautdevelop/Real-Estate/issues) su GitH
 ## 🔄 Guida rapida (per sviluppatori)
 
 Clone
-git clone https://github.com/tuo-username/Real-Estate.git
+git clone https://github.com/astronautdevelop/Real-Estate.git
 cd Real-Estate
 
 Installa le dipendenze
